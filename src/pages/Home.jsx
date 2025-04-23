@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   const [posts, setPosts] = useState([]);
-  const [search, setSearch] = useState(""); // Use local state for search query
+  const [search, setSearch] = useState(""); 
 
   useEffect(() => {
     fetch("https://dummyjson.com/posts")
@@ -16,14 +16,14 @@ const Home = () => {
       });
   }, []);
 
-  // Filter posts based on search query
+
   const filteredPosts = posts.filter((post) =>
     post.title.toLowerCase().includes(search.toLowerCase())
   );
 
   return (
     <div className="p-4">
-      {/* Search input field */}
+     
       <div className="mb-6 max-w-lg ">
         <label
           htmlFor="searchInput"

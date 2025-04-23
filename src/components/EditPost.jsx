@@ -2,16 +2,16 @@ import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 
 const EditPost = () => {
-  const { postId } = useParams();  // Get postId from the URL
-  const navigate = useNavigate();  // useNavigate hook for programmatic navigation
+  const { postId } = useParams();  
+  const navigate = useNavigate();  
 
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
 
   useEffect(() => {
-    // Get posts from localStorage
+   
     const posts = JSON.parse(localStorage.getItem("newPosts")) || [];
-    const post = posts.find((post) => post.id === parseInt(postId));  // Find post by postId
+    const post = posts.find((post) => post.id === parseInt(postId));  // Finding the  post by postId
 
     if (post) {
       setTitle(post.title);
@@ -37,8 +37,8 @@ const EditPost = () => {
     localStorage.setItem("newPosts", JSON.stringify(updatedPosts));
 
     // Navigate to the post details page to view the updated post
-    // After updating, navigate back to home page, you can adjust this as needed
-    navigate("/", { replace: true });  // Redirect to the home page after saving
+    // After updating, navigate back to home page
+    navigate("/", { replace: true });  
   };
 
   return (

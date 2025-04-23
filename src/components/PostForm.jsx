@@ -1,4 +1,4 @@
-// PostForm.jsx
+
 import { useState } from "react";
 
 const PostForm = ({ onSubmit }) => {

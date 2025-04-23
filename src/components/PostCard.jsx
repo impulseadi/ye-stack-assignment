@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const PostCard = ({ post, showEditLink }) => (
   <div className="border p-4 mb-4 relative">
-    {/* Edit Post Button in the top-left corner */}
+  
     {showEditLink && (
       <Link
         to={`/edit-post/${post.id}`}
@@ -15,7 +15,7 @@ const PostCard = ({ post, showEditLink }) => (
     <h3 className="font-bold">{post.title}</h3>
     <p>{post.body.slice(0, 100)}...</p>
     
-    {/* Read More Button */}
+  
     <Link
       to={`/post/${post.id}`}
       className="text-blue-500 mt-2 block"
