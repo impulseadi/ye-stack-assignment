@@ -35,8 +35,8 @@ To run this project locally on your machine, follow these steps:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/blog-post-app.git
-cd blog-post-app
+git clone https://github.com/impulseadi/ye-stack-assignment
+cd client
 ```
 ### 2. Install Dependencies
 ```bash
