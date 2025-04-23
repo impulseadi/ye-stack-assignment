@@ -1,4 +1,4 @@
-# Blog Post Application
+# Assignment Blog Post Type Application
 
 This is a simple blog post application built using **React**, **React Router**, and **Local Storage**. Users can search for blog posts, add new posts, and view them in a list. The application fetches posts from a public API and allows users to add their own posts, which are saved in **localStorage**.
 
