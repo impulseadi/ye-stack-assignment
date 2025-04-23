@@ -15,7 +15,7 @@ This is a simple blog post application built using **React**, **React Router**, 
 You can view the live demo of the project by clicking the link below:
 
 [Live Demo Link](https://ye-stack-assignment.vercel.app/)  
-*(Replace `#` with the actual live link to your project if hosted on platforms like Netlify, Vercel, etc.)*
+
 
 ## Technologies Used
 
